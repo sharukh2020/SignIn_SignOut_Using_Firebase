@@ -1,0 +1,143 @@
+  .topbarHide {
+      display: none;
+  }
+
+  .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8vh;
+      min-width: 320px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      background-color: blue;
+  }
+
+  .logoPostLogin {
+      width: 125px;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+  .logoPreLogin {
+      width: 125px;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+  .sidebarToggler {
+      width: 50px;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: 500;
+      font-size: 35px;
+  }
+
+  .sidebarToggler:hover {
+      color: bisque;
+  }
+
+  .topbarRightPortionPostLogin {
+      height: 8vh;
+      padding-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .userAvatar {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      background-color: white;
+      border-radius: 50%;
+  }
+
+  .profileMenuHide {
+      display: none;
+  }
+
+  .profileMenuShow {
+      width: 180px;
+      height: 100px;
+      position: absolute;
+      top: 35px;
+      left: -170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 2%;
+  }
+
+  .profileMenuShow div {
+      width: 100%;
+      height: 8vh;
+      padding: 0 20px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .profileMenuShow div:hover {
+      font-weight: 500;
+      background-color: aliceblue;
+  }
+
+  .profileMenuShow a {
+      text-decoration: none;
+      color: black;
+  }
+
+  .topbarPreLoginRightQuestionSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      color: white;
+  }
+
+  .topbarPreLoginRightQuestionSection a {
+      margin: 0 20px;
+      color: white;
+      font-weight: bold;
+  }
+
+  @media (max-width:768px) {
+      .logoPostLogin {
+          display: none;
+      }
+
+      .topbarPreLoginRightQuestionSection div {
+          display: none;
+      }
+  }
+
+  @media (min-width:769px) {
+      .sidebarToggler {
+          display: none;
+      }
+  }

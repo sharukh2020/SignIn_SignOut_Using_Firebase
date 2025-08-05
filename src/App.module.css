@@ -1,0 +1,39 @@
+.loadingText {
+    color: blue;
+}
+
+.preLoadingMainContainer {
+    min-width: 320px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postLoadingMainContainer {
+    min-width: 320px;
+    height: 100vh;
+}
+
+.preLoginRouteContainer {
+    width: 100%;
+    height: 92vh;
+    position: relative;
+    top: 8vh;
+    left: 0;
+}
+
+.postLoginRouteContainer {
+    width: calc(100% - 250px);
+    height: 92vh;
+    position: relative;
+    top: 50px;
+    left: 250px;
+}
+
+@media (max-width:768px) {
+    .postLoginRouteContainer {
+        left: 0;
+        width: 100%;
+    }
+}

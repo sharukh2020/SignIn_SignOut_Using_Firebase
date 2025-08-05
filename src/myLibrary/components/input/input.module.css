@@ -1,0 +1,80 @@
+.inputContainer {
+    position: relative;
+}
+
+.input:focus {
+    border: 1px solid blue;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 0 8px;
+    border: 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: black !important;
+}
+
+
+.placeholder {
+    border-radius: 8px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    background-color: white;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+@keyframes placeholderUp {
+    0% {
+        top: 10px;
+    }
+
+    100% {
+        top: -10px
+    }
+}
+
+@keyframes placeholderDown {
+    0% {
+        top: -10px
+    }
+
+    100% {
+        top: 10px;
+    }
+}
+
+.placeholderUp {
+    animation: placeholderUp 0.25s ease-in-out 0s 1 forwards;
+    position: absolute;
+    top: -10px;
+    left: 8px;
+}
+
+.placeholderDown {
+    animation: placeholderDown 0.25s ease-in-out 0s 1 forwards;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    color: black;
+}
+
+.placeholderUpBlue {
+    color: blue;
+}
+
+.placeholderUpBlack {
+    color: black;
+}

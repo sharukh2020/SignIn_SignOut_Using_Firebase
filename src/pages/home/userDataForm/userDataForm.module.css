@@ -1,0 +1,56 @@
+.userDataForm {
+    width: 400px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2%;
+}
+
+.userDataFormHeading {
+    width: 80%;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+.userDataInputs {
+    width: 80%;
+}
+
+.userDataSubmit {
+    border: 0;
+    width: 50%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.userDataSubmit:hover {
+    background-color: rgb(8, 8, 143);
+}
+
+@media (max-width:320px) {
+    .userDataForm {
+        width: 300px;
+    }
+
+    .userDataInputs {
+        width: 90%;
+    }
+}
+
+@media (min-width:321px) and (max-width:375px) {
+    .userDataForm {
+        width: 320px;
+    }
+
+    .userDataInputs {
+        width: 90%;
+    }
+}
